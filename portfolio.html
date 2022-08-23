@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=1200, initial-scale=1.0" />
+    <meta name="viewport" content="width=768, initial-scale=1.0" />
+    <meta name="viewport" content="width=480, initial-scale=1.0" />
     <link href="./css/main.min.css" rel="stylesheet" />
     <link href="./css/modern-normalize.css" rel="stylesheet" />
 
@@ -17,27 +20,26 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header container">
+      <header class="header">
         <a href="index.html" class="header__logo"
           ><span class="header__logo-color">Web</span>Studio</a
         >
-        <nav>
-          <ul class="header__nav nav-list">
+        <nav class="header__nav-size">
+          <ul class="header__nav">
             <li>
-              <a href="index.html" class="header__nav-color">Agencja</a>
+              <a href="index.html" class="header__nav-color"
+                >Agencja</a
+              >
             </li>
             <li>
-              <a href="portfolio.html" class="header__nav-color header__active"
-                >Portfolio</a
-              >
+              <a href="portfolio.html" class="header__nav-color header__active">Portfolio</a>
             </li>
             <li>
               <a href="contacts.html" class="header__nav-color">Kontakt</a>
             </li>
           </ul>
         </nav>
-        <ul class="header__contacts nav-list">
+        <ul class="header__contacts">
           <li>
             <a href="emailto:info@devstudio.com" class="header__contacts-color">
               <svg class="icon-spacing" width="16" height="12">
@@ -55,6 +57,19 @@
             >
           </li>
         </ul>
+        <button 
+        class="header__mobile js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+          <svg class="header__mobile-menu">
+            <use
+              xlink:href="./images/icons.svg#mobile-menu"
+              width="24"
+              height="16 "
+            ></use>
+          </svg>
+        </button>
+      </div>
       </header>
       <div class="header-line-border"></div>
       <main>
@@ -90,10 +105,8 @@
                   </p>
                 </div>
               </div>
-              <img
+              <img class="products__picture"
                 src="https://github.com/BieganskiP/goit-markup-hw-05/blob/main/images/portfolio-img-1.jpg?raw=true"
-                width="370"
-                height="294"
                 alt="Technocrack"
               />
               <h4 class="products__header">Technocrack</h4>
@@ -112,10 +125,8 @@
                   </p>
                 </div>
               </div>
-              <img
+              <img class="products__picture"
                 src="https://github.com/BieganskiP/goit-markup-hw-05/blob/main/images/portfolio-img-2.jpg?raw=true"
-                width="370"
-                height="294"
                 alt="Grafika New Orlean vs Golden Star"
               />
               <h4 class="products__header">
@@ -136,10 +147,8 @@
                   </p>
                 </div>
               </div>
-              <img
+              <img class="products__picture"
                 src="https://github.com/BieganskiP/goit-markup-hw-05/blob/main/images/portfolio-img-3.jpg?raw=true"
-                width="370"
-                height="294"
                 alt="Restauracja Seafood<"
               />
               <h4 class="products__header">Restauracja Seafood</h4>
@@ -158,10 +167,8 @@
                   </p>
                 </div>
               </div>
-              <img
+              <img class="products__picture"
                 src="https://github.com/BieganskiP/goit-markup-hw-05/blob/main/images/portfolio-img-4.jpg?raw=true"
-                width="370"
-                height="294"
                 alt="Projekt Prime"
               />
               <h4 class="products__header">Projekt Prime</h4>
@@ -180,10 +187,8 @@
                   </p>
                 </div>
               </div>
-              <img
+              <img class="products__picture"
                 src="https://github.com/BieganskiP/goit-markup-hw-05/blob/main/images/portfolio-img-5.jpg?raw=true"
-                width="370"
-                height="294"
                 alt="Projekt Boxes"
               />
               <h4 class="products__header">Projekt Boxes</h4>
@@ -202,10 +207,8 @@
                   </p>
                 </div>
               </div>
-              <img
+              <img class="products__picture"
                 src="https://github.com/BieganskiP/goit-markup-hw-05/blob/main/images/portfolio-img-6.jpg?raw=true"
-                width="370"
-                height="294"
                 alt="Inspiration has no Borders"
               />
               <h4 class="products__header">Inspiration has no Borders</h4>
@@ -224,10 +227,8 @@
                   </p>
                 </div>
               </div>
-              <img
+              <img class="products__picture"
                 src="https://github.com/BieganskiP/goit-markup-hw-05/blob/main/images/portfolio-img-7.jpg?raw=true"
-                width="370"
-                height="294"
                 alt="Magazyn Limited Edition"
               />
               <h4 class="products__header">Magazyn Limited Edition</h4>
@@ -246,10 +247,8 @@
                   </p>
                 </div>
               </div>
-              <img
+              <img class="products__picture"
                 src="https://github.com/BieganskiP/goit-markup-hw-05/blob/main/images/portfolio-img-8.jpg?raw=true"
-                width="370"
-                height="294"
                 alt="Projekt LAB<"
               />
               <h4 class="products__header">Projekt LAB</h4>
@@ -268,10 +267,8 @@
                   </p>
                 </div>
               </div>
-              <img
+              <img class="products__picture"
                 src="https://github.com/BieganskiP/goit-markup-hw-05/blob/main/images/portfolio-img-9.jpg?raw=true"
-                width="370"
-                height="294"
                 alt="Growing Business"
               />
               <h4 class="products__header">Growing Business</h4>
@@ -282,7 +279,7 @@
       </main>
       <footer>
         <div class="container footer">
-          <div>
+          <div class="footer__container">
             <a href="index.html" class="footer__logo"
               ><span class="footer__logo-color">Web</span>Studio</a
             >
@@ -302,7 +299,7 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="footer__container">
             <h4 class="footer__header">Dołącz do nas</h4>
             <ul class="footer__icons">
               <li>
@@ -351,7 +348,7 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="footer__container">
             <h4 class="footer__header">Zapisz się do newslettera</h4>
             <input type="text" class="footer__sign-up" placeholder="E-mail" />
             <button type="submit" class="footer__button">
@@ -369,6 +366,5 @@
           </div>
         </div>
       </footer>
-    </div>
   </body>
 </html>
