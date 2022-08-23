@@ -41,16 +41,6 @@
     align-items: center;
     justify-content: space-between;
     margin: 0;
-
-    &__logo {
-      font-family: $logo-font;
-      font-size: $font-logo;
-      color: $logo-color;
-      line-height: 1, 174;
-      &-color {
-        color: $hover-text;
-      }
-    }
     &__mobile {
       display: none;
     }
@@ -113,17 +103,6 @@
     padding: 24px 0 25px 0;
     align-items: center;
     justify-content: center;
-    &__logo {
-      font-family: $logo-font;
-      font-size: $font-logo;
-      font-weight: $font-bold;
-      color: $logo-color;
-      line-height: 1.193;
-
-      &-color {
-        color: $hover-text;
-      }
-    }
     &__mobile {
       display: none;
     }
@@ -162,18 +141,6 @@
       @include nav-links;
       gap: 50px;
       margin-left: auto;
-      &-color {
-        color: $primary-text;
-        fill: $primary-text;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover {
-          color: $hover-text;
-          fill: $hover-text;
-        }
-      }
-      svg {
-        margin: 0 10px 0 0;
-      }
     }
   }
 }
