@@ -90,6 +90,7 @@
 .our-team {
   @include flexCenter(column);
   gap: 30px;
+  padding: 0 15px;
 
   &__card {
     @include flexCenter(column);
