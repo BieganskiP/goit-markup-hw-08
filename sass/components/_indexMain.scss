@@ -232,7 +232,7 @@
   .our-speciality {
     @include flexCenter(column);
     gap: 30px;
-    padding: 60px 15px 0 15px;
+    padding: 60px 15px 60px 15px;
     justify-content: center;
 
     & > li {
@@ -261,25 +261,8 @@
       line-height: 1.71;
     }
   }
-  .our-services {
-    @include flexCenter(column);
-    gap: 30px;
-
-    &__description {
-      color: $primary-color;
-      font-weight: $font-bold;
-      background-color: #2f303acc;
-      height: 70px;
-      text-align: center;
-      position: relative;
-      text-transform: uppercase;
-      padding: 27px 0;
-      top: -72px;
-    }
-    &-card-size {
-      height: 294px;
-      width: 370px;
-    }
+  .mobile-hidden {
+    display: none;
   }
   .our-team {
     @include flexCenter(column);
