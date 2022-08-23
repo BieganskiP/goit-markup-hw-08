@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   footer {
     background-color: $background-footer;
     padding: 60px 0;
@@ -105,12 +105,9 @@
     }
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 481px) {
 }
-@media (max-width: 480px),
-  (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media (max-width: 480px) {
   footer {
     background-color: $background-footer;
     width: 100%;

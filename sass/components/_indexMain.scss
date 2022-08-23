@@ -170,7 +170,7 @@
     }
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 481px) {
   .block {
     @include flexCenter(column);
     padding: 94px 0;
