@@ -331,11 +331,10 @@
     @include flexCenter(row);
     flex-wrap: wrap;
     gap: 30px;
-
     &__logo {
       border-radius: 4px;
       border: $icon-background solid 1px;
-      width: 170px;
+      width: 210px;
       height: 92px;
       fill: $icon-background;
       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
