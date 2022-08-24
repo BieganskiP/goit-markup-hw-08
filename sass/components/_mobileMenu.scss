@@ -21,8 +21,8 @@
   border: none;
   position: absolute;
   fill: $secondary-text;
-  top: 20px;
-  right: -250px;
+  top: 21px;
+  right: 25px;
 
   &:focus,
   &:hover {
@@ -30,7 +30,7 @@
   }
 }
 .mobile {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -96,5 +96,9 @@
       color: $hover-text;
       font-weight: $font-medium;
     }
+  }
+  &__exit {
+    width: 19px;
+    height: 19px;
   }
 }
