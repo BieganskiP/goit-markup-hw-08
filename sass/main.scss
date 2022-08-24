@@ -16,21 +16,20 @@ body {
   letter-spacing: map-get($letter-spacing, standard);
 }
 .container {
-  max-width: 1200px;
-  min-width: 100%;
+  width: 100%;
+
   margin: 0 auto;
 }
 @media (min-width: 768px) {
   .container {
-    max-width: 768px;
-    min-width: 450px;
+    width: 768px;
     margin: 0 auto;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1200px;
-    min-width: 450px;
+    width: 1200px;
+
     margin: 0 auto;
   }
 }
