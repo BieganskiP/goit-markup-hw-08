@@ -33,3 +33,7 @@ body {
     margin: 0 auto;
   }
 }
+a:focus-within {
+  color: $hover-text;
+  fill: $hover-text;
+}
